@@ -4,7 +4,7 @@ import { SendHorizonal } from "lucide-react";
 import botAvatar from "../assets/bot.jpg";
 import userAvatar from "../assets/user.jpg";
 import logo from "../assets/logo.jpg";
-import chatBackground from "../assets/chat-bg.jpg"; // ✅ Your background image
+import chatBackground from "../assets/chat-bg.jpg";
 
 const ChatPage = () => {
   const [messages, setMessages] = useState([
