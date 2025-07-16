@@ -10,7 +10,7 @@ const ChatPage = () => {
   const [messages, setMessages] = useState([
     {
       sender: "bot",
-      text: "Welcome to the Medical Chatbot. How can I help you with your health today?",
+      text: "👋Welcome! I'm your AI assistant🤖Here to answer anything about Razib Dash! Got a question? Just ask! 💬✨",
     },
   ]);
   const [input, setInput] = useState("");
@@ -103,8 +103,8 @@ const ChatPage = () => {
               <div
                 className={`rounded-xl px-4 py-2 text-sm max-w-sm shadow ${
                   msg.sender === "user"
-                    ? "bg-blue-700 text-white"
-                    : "bg-green-700 text-white"
+                    ? "bg-gradient-to-br from-gray-950 to-blue-800 text-white"
+                    : "bg-gradient-to-br from-gray-900 to-black text-white"
                 }`}
               >
                 {msg.text}
@@ -118,7 +118,7 @@ const ChatPage = () => {
                 alt="bot"
                 className="w-10 h-10 rounded-full shadow"
               />
-              <div className="bg-green-700 text-white px-4 py-2 rounded-xl shadow animate-pulse">
+              <div className="bg-gradient-to-br from-gray-900 to-black text-white px-4 py-2 rounded-xl shadow animate-pulse">
                 Typing...
               </div>
             </div>
@@ -139,7 +139,7 @@ const ChatPage = () => {
           <motion.button
             onClick={sendMessage}
             whileTap={{ scale: 0.95 }}
-            className="bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition"
+            className="bg-gradient-to-br from-gray-900 to-black text-white px-4 py-2 rounded-full shadow hover:bg-gray-900 transition"
           >
             <SendHorizonal size={18} />
           </motion.button>
