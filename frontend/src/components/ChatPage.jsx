@@ -34,7 +34,7 @@ const ChatPage = () => {
     setInput("");
 
     try {
-      const res = await fetch("http://localhost:8080/api/chat", {
+      const res = await fetch("http://localhost:8080/api/bot", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ msg: input }),
